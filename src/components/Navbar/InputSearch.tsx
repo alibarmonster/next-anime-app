@@ -5,14 +5,14 @@ import { useRouter } from 'next/navigation';
 import { useRef, useState } from 'react';
 
 const InputSearch = () => {
-  const searchRef = useRef();
+  const searchRef = useRef<HTMLInputElement | null>(null);
   const router = useRouter();
   const [query, setQuery] = useState('');
 
   const handleSearch = () => {
     event?.preventDefault();
-    const keyword = searchRef.current.value;
-    if (keyword.trim() !== '') {
+    const keyword = searchRef.current?.value;
+    if (keyword && keyword.trim() !== '') {
       router.push(`/search/${keyword}`);
     }
   };
