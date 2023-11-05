@@ -5,7 +5,7 @@ import Link from 'next/link';
 const AnimeList = ({ api }: any) => {
   return (
     <div className='grid md:grid-cols-5 sm:grid-cols-3  grid-cols-2 gap-4 px-4 '>
-      {api.data?.map((anime: any) => {
+      {api?.data?.map((anime: any) => {
         return (
           // eslint-disable-next-line react/jsx-key
           <div className='shadow-xl  rounded-md '>
