@@ -5,14 +5,15 @@ import Link from 'next/link';
 const AnimeList = ({ api }: any) => {
   return (
     <div className='grid md:grid-cols-5 sm:grid-cols-3  grid-cols-2 gap-4 px-4 '>
-      {api?.data?.map((anime: any) => {
+      {api?.data?.map((anime: any, index: number) => {
         return (
-          // eslint-disable-next-line react/jsx-key
-          <div className='shadow-xl  rounded-md '>
+          <div
+            className='shadow-xl  rounded-md '
+            key={anime.mal_id}
+          >
             <Link
-              href={`${anime.mal_id}`}
+              href={`/anime/${anime.mal_id}`}
               className='cursor-pointer  text-color-white transition-opacity hover:text-color-primary'
-              key={anime.mal_id}
             >
               <Image
                 src={anime.images.webp.image_url}
