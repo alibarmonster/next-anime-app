@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Header = ({ title, linkHref, linkTitle }: any) => {
   return (
     <div className='p-4 flex items-center justify-between'>
-      <h1 className='text-2xl font-bold text-color-white'>{title}</h1>
+      <h1 className='text-2xl font-bold text-color-secondary dark:text-color-white'>{title}</h1>
       {linkHref && linkTitle ? (
         <Link
           href={linkHref}

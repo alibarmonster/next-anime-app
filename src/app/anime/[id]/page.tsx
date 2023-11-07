@@ -18,15 +18,15 @@ const Page = async ({ params }: any) => {
           <h3>PERINGKAT</h3>
           <p>{anime.data.rank}</p>
         </div>
-        <div className='w-36 flex flex-col justify-center items-center rounded border border-color-primary p2'>
+        <div className='w-36 flex flex-col justify-center items-center rounded border border-color-primary p-2'>
           <h3>Score</h3>
           <p>{anime.data.score}</p>
         </div>
-        <div className='w-36 flex flex-col justify-center items-center rounded border border-color-primary p2'>
+        <div className='w-36 flex flex-col justify-center items-center rounded border border-color-primary p-2'>
           <h3>Popularity</h3>
           <p>{anime.data.popularity}</p>
         </div>
-        <div className='w-36 flex flex-col justify-center items-center rounded border border-color-primary p2'>
+        <div className='w-36 flex flex-col justify-center items-center rounded border border-color-primary p-2'>
           <h3>episode</h3>
           <p>{anime.data.episodes}</p>
         </div>

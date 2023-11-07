@@ -8,7 +8,7 @@ const AnimeList = ({ api }: any) => {
       {api?.data?.map((anime: any, index: number) => {
         return (
           <div
-            className='shadow-xl  rounded-md '
+            className=''
             key={anime.mal_id}
           >
             <Link

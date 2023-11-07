@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import InputSearch from './InputSearch';
+import ThemeButton from '../ThemeButton';
 
 const Navbar = () => {
   return (
-    <header className='bg-color-primary'>
+    <header className='bg-whiteTheme-secondary dark:bg-color-navbar'>
       <div className='flex md:flex-row flex-col justify-between p-4 gap-2 md:items-center'>
         <Link
           href='/'
@@ -11,6 +12,7 @@ const Navbar = () => {
         >
           ANIMELIEST
         </Link>
+        <ThemeButton />
         <InputSearch />
       </div>
     </header>

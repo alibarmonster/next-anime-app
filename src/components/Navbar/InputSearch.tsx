@@ -17,10 +17,10 @@ const InputSearch = () => {
     }
   };
   return (
-    <div className='relative'>
+    <div className='relative '>
       <input
-        placeholder='cari animee??'
-        className='w-full p-2 rounded'
+        placeholder='cari animee eg Naruto'
+        className='w-full p-2 rounded dark:bg-color-secondary'
         ref={searchRef}
         onChange={(e) => setQuery(e.target.value)}
         onKeyDown={(e) => (e.key === 'Enter' ? handleSearch() : null)}
